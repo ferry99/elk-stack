@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  elastic_db:
+  elasticdb:
     image: elasticsearch:7.8.0
     environment: 
       - discovery.type=single-node
@@ -11,16 +11,33 @@ services:
       - elk-net
 
 
-  kibana_web:
+  kibanaweb:
     image: kibana:7.8.0
     ports:
       - "5602:5601"
     depends_on: 
-      - elastic_db
+      - elasticdb
     environment:
-      - ELASTICSEARCH_HOSTS=http://elastic_db:9200
+      - ELASTICSEARCH_HOSTS=http://elasticdb:9200
     networks:
       - elk-net
+
+  logstash_app:
+    build: .
+    depends_on: 
+      - elasticdb
+      - kibanaweb
+    environment:
+      - ELASTICSEARCH_HOST_PORT=http://elasticdb:9200 
+    volumes:
+      # - ./config/logstash/logstash.yml:/usr/share/logstash/config/logstash.yml
+      # - ./config/logstash-docker.conf:/tmp/config/logstash-docker.conf
+      - ./config/logstash/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./config/logstash-docker.conf:/usr/share/logstash/pipeline/logstash.conf:ro
+      - ./logs/:/tmp/logs/
+    networks:
+      - elk-net
+
 # volumes:
 #   m2-cache:
 #   postgresql-volume2:
