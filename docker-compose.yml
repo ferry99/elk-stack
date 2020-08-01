@@ -1,0 +1,30 @@
+version: '3.7'
+services:
+  elastic_db:
+    image: elasticsearch:7.8.0
+    environment: 
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9201:9200"
+    networks:
+      - elk-net
+
+
+  kibana_web:
+    image: kibana:7.8.0
+    ports:
+      - "5602:5601"
+    depends_on: 
+      - elastic_db
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elastic_db:9200
+    networks:
+      - elk-net
+# volumes:
+#   m2-cache:
+#   postgresql-volume2:
+#     external: true
+networks:
+  elk-net:
+    external: true
