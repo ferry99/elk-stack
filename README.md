@@ -19,3 +19,6 @@
 
 ## USING DOCKER-COMPOSE
 * docker-compose up build -d
+
+## Architecture
+* https://app.diagrams.net/#G1Tk1lMus9v8Ouwz8J-ca9b1TXiST2lIx0
