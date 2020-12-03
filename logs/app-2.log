@@ -1,3 +1,12 @@
+[2020-07-28 21:55:09] [main] [DEBUG] debug1
+[2020-07-28 21:55:09] [main] [DEBUG] debug2
+[2020-07-30 21:55:09] [main] [DEBUG] OUTSIDE VOLUME
+[2020-07-30 21:55:09] [main] [DEBUG] FROM VOLUME DOCKER MOUNTING
+[2020-07-30 21:55:09] [main] [DEBUG] OUTSIDE VOLUME
+[2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT
+[2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT 2
+[2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT 3
+[2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT 4
 [2020-07-27 17:54:57] [main] [INFO] Starting NichemarketApplication on DESKTOP-F5PNO4S with PID 8348 (started by Ferry in H:\Spring Project\spring-plp)
 [2020-07-27 17:54:57] [main] [INFO] No active profile set, falling back to default profiles: default
 [2020-07-27 17:55:00] [main] [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -22,32 +31,15 @@
 [2020-07-27 17:55:02] [main] [INFO] Root WebApplicationContext: initialization completed in 4711 ms
 [2020-07-27 17:55:03] [main] [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
 [2020-07-27 17:55:03] [main] [INFO] HHH000412: Hibernate Core {5.4.10.Final}
-[2020-07-27 17:55:03] [main] [INFO] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[2020-07-27 17:55:03] [main] [INFO] HikariPool-1 - Starting...
-[2020-07-27 17:55:03] [main] [INFO] HikariPool-1 - Start completed.
-[2020-07-27 17:55:03] [main] [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-07-27 17:55:08] [main] [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-07-27 17:55:08] [main] [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-07-27 17:55:09] [main] [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-07-28 20:55:09] [main] [DEBUG] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-07-28 21:55:09] [main] [DEBUG] debug1
-[2020-07-28 21:55:09] [main] [DEBUG] debug2
-[2020-07-28 20:55:09] [main] [DEBUG] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-07-28 21:55:09] [main] [DEBUG] debug1
-[2020-07-28 21:55:09] [main] [DEBUG] debug2
 [2020-07-30 21:55:09] [main] [DEBUG] OUTSIDE VOLUME
-[2020-07-30 21:55:09] [main] [DEBUG] FROM VOLUME DOCKER MOUNTING
-[2020-07-30 21:55:09] [main] [DEBUG] OUTSIDE VOLUME
-[2020-07-30 21:55:09] [main] [DEBUG] FROM VOLUME DOCKER MOUNTING
-[2020-07-30 21:55:09] [main] [DEBUG] OUTSIDE VOLUME II
-[2020-07-30 21:55:09] [main] [DEBUG] FROM VOLUME DOCKER MOUNTING II
-[2020-07-30 21:55:09] [main] [DEBUG] THIS IS OUTSIDE VOLUME II
-[2020-07-30 21:55:09] [main] [DEBUG] THIS IS FROM VOLUME DOCKER MOUNTING II
-[2020-07-30 21:55:09] [main] [DEBUG] YYY
-[2020-07-30 21:55:09] [main] [DEBUG] WTFFFF
-[2020-07-30 21:55:09] [main] [DEBUG] WHATTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
-[2020-07-30 21:55:09] [main] [DEBUG] Why ERROR
-[2020-07-30 21:55:09] [main] [DEBUG] THIS IS FROM VOLUME DOCKER MOUNTING II
-[2020-07-30 21:55:10] [main] [DEBUG] TEST TEST
-[2020-07-30 21:55:10] [main] [DEBUG] TEST TEST 12
-[2020-07-30 21:55:10] [main] [DEBUG] FILEBEAT IS GOOD OR NOT
+[2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT
+[2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT 2
+[2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT 3
+[2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT 4
+[2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT 1000
+[2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT 99999999999999
+[2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT 8888888888888888
+
+
+
+

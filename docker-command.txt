@@ -10,7 +10,8 @@ docker run --name kibana --network elk-net -p 5601:5601 -p 8080:8080 -e ELASTICS
 docker build -t customlogstash .
 docker run --name logstash --network elk-net --rm customlogstash 
 docker run --rm -it -v $PWD/config/:/usr/share/logstash/config/ customlogstash
-docker run --name logstash -v $PWD/:/tmp/ --network elk-net --rm customlogstash logstash -f /tmp/config/logstash-docker.conf
+docker run --name logstash -v $PWD/config/:/tmp/config/ -v $PWD/logs/:/tmp/logs/ --network elk-net -p 5044:5044 --rm customlogstash logstash -f /tmp/config/logstash-filebeat.conf
 
-
-
+--RUNNING FILEBEAT
+cd Filebeat
+docker run --network elk-net -v $PWD/filebeat.yml:/usr/share/filebeat/filebeat.yml -v $PWD/APP_2/:/tmp/APP_2/ docker.elastic.co/beats/filebeat:7.4.2 -e -d "*"
