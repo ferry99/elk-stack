@@ -1,0 +1,10 @@
+filebeat:
+  inputs:
+    -
+      paths:
+        - /tmp/APP_3/logs/*.log
+      input_type: log     
+      
+output:
+  logstash:
+    hosts: ["logstash_app:5044"]	

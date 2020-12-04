@@ -13,9 +13,14 @@
 * docker run --name logstash -v $PWD/config/:/tmp/config/ -v $PWD/logs/:/tmp/logs/ --network elk-net -p 5044:5044 --rm customlogstash logstash -f /tmp/config/logstash-filebeat.conf
 
 
-## RUNNING FILEBEAT
-* cd Filebeat
-* docker run --network elk-net -v $PWD/filebeat.yml:/usr/share/filebeat/filebeat.yml -v $PWD/APP_2/:/tmp/APP_2/ docker.elastic.co/beats/filebeat:7.4.2 -e -d "*"
+## RUNNING FILEBEAT ON APP 2
+* cd APP_2
+* docker run --network elk-net -v $PWD/filebeat.yml:/usr/share/filebeat/filebeat.yml -v H:/ELK-Stack/APP_2/logs/:/tmp/APP_2/logs/ docker.elastic.co/beats/filebeat:7.4.2 -e -d "*"
+* Another way using : docker-compose up 
+
+## RUNNING FILEBEAT ON APP 2
+* cd APP_3
+* docker run --network elk-net -v $PWD/filebeat.yml:/usr/share/filebeat/filebeat.yml -v H:/ELK-Stack/APP_3/logs/:/tmp/APP_3/logs/ docker.elastic.co/beats/filebeat:7.4.2 -e -d "*"
 
 ## USING DOCKER-COMPOSE
 * docker-compose up build -d

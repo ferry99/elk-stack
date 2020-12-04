@@ -39,3 +39,10 @@
 [2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT 1000
 [2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT 99999999999999
 [2020-08-02 22:00:09] [main] [DEBUG] FROM FILEBEAT 8888888888888888
+[2020-08-02 22:00:09] [main] [DEBUG] Error Application 22
+[2020-08-02 22:00:09] [main] [DEBUG] Error Application 22
+[2020-08-02 22:00:09] [main] [DEBUG] Error Application 2
+[2020-08-02 22:00:09] [main] [DEBUG] Composed FILEBEAT 2
+[2020-08-02 22:00:09] [main] [DEBUG] composed with docker this
+[2020-08-02 22:00:09] [main] [DEBUG] composed with docker this 2
+[2020-08-02 22:00:09] [main] [DEBUG] composed with docker this 3
