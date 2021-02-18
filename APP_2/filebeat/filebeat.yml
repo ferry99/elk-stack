@@ -3,7 +3,22 @@ filebeat:
     -
       paths:
         - /tmp/APP_2/logs/*.log
-      input_type: log     
+      input_type: log    
+      fields:
+        log_prefix: app
+        log_application: app2
+        log_idx: transaction-log
+      fields_under_root: false 
+    
+    -
+      paths:
+        - /tmp/APP_3/logs/*.log
+      input_type: log    
+      fields:
+        log_prefix: app
+        log_application: app3
+        log_idx: access-log
+      fields_under_root: false 
       
 output:
   logstash:
